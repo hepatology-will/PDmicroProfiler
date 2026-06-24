@@ -1,0 +1,38 @@
+Package: PDmicroProfiler
+Title: Microbiome Profiler for Parkinson's Disease Research
+Version: 0.2.0
+Authors@R: c(
+    person(given = "Jiale",
+           family = "Liu",
+           role = "aut"),
+    person(given = "Wei",
+           family = "Hou",
+           email = "1503259274@qq.com",
+           role = c("aut", "cre"))
+)
+Description: A package for analyzing and visualizing microbiome data in Parkinson's disease research, 
+    including abundance analysis, KO occurrence visualization, and bacteriophage-host interaction networks.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+LazyDataCompression: xz
+Imports:
+    ggplot2,
+    ggsignif,
+    dplyr,
+    magrittr,
+    tidyr,
+    scales,
+    grid,
+    gridExtra,
+    visNetwork,
+    patchwork,
+    rlang,
+    igraph
+Suggests:
+    knitr,
+    rmarkdown,
+    testthat
+RoxygenNote: 7.3.3
+Depends: 
+    R (>= 3.5)
