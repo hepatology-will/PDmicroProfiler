@@ -9,18 +9,19 @@
 </p>
 
 ---
+
 ## Overview
 
 **PDmicroProfiler** is an R package designed for standardized exploration and visualization of Parkinson's disease (PD)-associated gut bacterial and viral signatures.
 
 The package integrates processed multi-cohort metagenomic resources and provides a unified framework for:
 
-- querying bacterial and viral abundance profiles;
-- comparing microbial features between PD and healthy control groups;
-- exploring viral operational taxonomic units (vOTUs);
-- summarizing phage family characteristics;
-- visualizing viral functional annotations;
-- investigating phage-host and bacteria–phage interaction networks.
+* querying bacterial and viral abundance profiles;
+* comparing microbial features between PD and healthy control groups;
+* exploring viral operational taxonomic units (vOTUs);
+* summarizing phage family characteristics;
+* visualizing viral functional annotations;
+* investigating phage-host and bacteria–phage interaction networks.
 
 PDmicroProfiler was developed to make PD-associated gut microbiome and virome resources easier to access, visualize, and interpret.
 
@@ -43,7 +44,7 @@ You can install the development version of **PDmicroProfiler** from GitHub using
 remotes::install_github("hepatology-will/PDmicroProfiler")
 ```
 
-Alternatively, you can use devtools:
+Alternatively, you can use `devtools`:
 
 ```r
 # install.packages("devtools")
@@ -62,15 +63,14 @@ library(PDmicroProfiler)
 
 PDmicroProfiler provides four major functional modules for exploring PD-associated gut bacteriome, virome, viral functions, and bacteria–phage interactions.
 
-| Module | Description | Representative functions |
-|---|---|---|
-| Microbial abundance profiling | Query and visualize bacterial taxa, viral families, or viral vOTUs across PD and healthy control samples. | `get_microbe_abundance()`<br>`plot_microbe_abundance()` |
-| Phage database exploration | Explore phages by host, family, lifestyle, specialization, and related phage characteristics. | `query_by_host()`<br>`query_by_id()`<br>`phage_family_dashboard()`<br>`plot_phage_summary()` |
-| Viral functional annotation | Retrieve and visualize vOTU-level and family-level KEGG Ortholog annotations and differential pathway profiles. | `get_votu_info()`<br>`get_ko_info()`<br>`get_pathway_info()`<br>`plot_votu_function()`<br>`plot_family_function()`<br>`plot_diff_pathway()` |
-| Bacteria–phage network analysis | Identify and visualize phage-host or bacteria–phage interaction networks in PD, HC, or shared networks. | `find_phage_host_interactions()`<br>`plot_interaction_network()`<br>`plot_interaction_network_static()` |
+| Module                          | Description                                                                                                     | Representative functions                                                                                                                    |
+| ------------------------------- | --------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| Microbial abundance profiling   | Query and visualize bacterial taxa, viral families, or viral vOTUs across PD and healthy control samples.       | `get_microbe_abundance()`<br>`plot_microbe_abundance()`                                                                                     |
+| Phage database exploration      | Explore phages by host, family, lifestyle, specialization, and related phage characteristics.                   | `query_by_host()`<br>`query_by_id()`<br>`phage_family_dashboard()`<br>`plot_phage_summary()`                                                |
+| Viral functional annotation     | Retrieve and visualize vOTU-level and family-level KEGG Ortholog annotations and differential pathway profiles. | `get_votu_info()`<br>`get_ko_info()`<br>`get_pathway_info()`<br>`plot_votu_function()`<br>`plot_family_function()`<br>`plot_diff_pathway()` |
+| Bacteria–phage network analysis | Identify and visualize phage-host or bacteria–phage interaction networks in PD, HC, or shared networks.         | `find_phage_host_interactions()`<br>`plot_interaction_network()`<br>`plot_interaction_network_static()`                                     |
 
 ---
-```
 
 ## Data resources
 
@@ -113,6 +113,7 @@ plot_microbe_abundance(
   area = "USA"
 )
 ```
+
 ---
 
 ### 2. Phage family dashboard
